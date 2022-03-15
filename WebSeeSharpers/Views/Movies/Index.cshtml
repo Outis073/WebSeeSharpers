@@ -13,13 +13,16 @@
     <thead>
         <tr>
             <th>
-                @Html.DisplayNameFor(model => model.Title)
+                @Html.ActionLink("Title", "Index", new { sortOrder = ViewBag.NameSortParm } )
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Duration)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Movie3d)
+            </th>
+            <th>
+                @Html.ActionLink("Playing from", "Index", new { sortOrder = ViewBag.DateSortParm } )
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.AgeRequirement)

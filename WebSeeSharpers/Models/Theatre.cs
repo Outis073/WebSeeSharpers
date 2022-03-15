@@ -15,4 +15,6 @@ public class Theatre
 
     public int AmountOfSeats { get; set; }
 
+    public ICollection<Viewing> Viewings { get; set; }
+
 }
